@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const completedProjects = [
-    ["01", "Automated Solar Tracking System", "Arduino • LDR • Servo"],
+    ["01", "Solar Panel Smart Tracking Simulator", "React • Vite • Solar Energy"],
     ["02", "Bluetooth Home Automation", "IoT • Bluetooth • Relay"],
     ["03", "Prepaid Energy Meter", "Smart Energy • Monitoring"],
     ["04", "Solar Mobile Charger", "Solar • Power Electronics"],
@@ -322,19 +322,15 @@ function App() {
 
                 <p>{tech}</p>
 
-                {/* PROJECT 01 GITHUB LINK */}
+                {/* PROJECT 01 - SOLAR SIMULATOR */}
                 <a
                   href={
                     number === "01"
-                      ? "https://github.com/yagantieswarkurukunda6300-cell"
+                      ? "https://github.com/yagantieswarkurukunda6300-cell/solar-panel-smart-tracking-simulator"
                       : "#contact"
                   }
                   target={number === "01" ? "_blank" : undefined}
-                  rel={
-                    number === "01"
-                      ? "noreferrer"
-                      : undefined
-                  }
+                  rel={number === "01" ? "noreferrer" : undefined}
                 >
                   View Project ↗
                 </a>
