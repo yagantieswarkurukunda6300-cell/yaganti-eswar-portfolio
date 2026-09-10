@@ -4,14 +4,15 @@ import "./App.css";
 function App() {
   const completedProjects = [
     ["01", "Solar Panel Smart Tracking Simulator", "React • Vite • Solar Energy"],
-    ["02", "Bluetooth Home Automation", "IoT • Bluetooth • Relay"],
-    ["03", "Prepaid Energy Meter", "Smart Energy • Monitoring"],
-    ["04", "Solar Mobile Charger", "Solar • Power Electronics"],
-    ["05", "Automatic Street Light", "LDR • Relay • Automation"],
-    ["06", "Smart Agricultural Irrigation", "IoT • Soil Moisture"],
-    ["07", "Over / Under Voltage Protection", "Protection • Relay"],
-    ["08", "Smart Water Level Controller", "Sensors • Automation"],
-    ["09", "Ultrasonic Object Detector", "Arduino • Sensors"],
+    ["02", "VOLTGUARD AI", "AI • Machine Learning • FastAPI • React"],
+    ["03", "Bluetooth Home Automation", "IoT • Bluetooth • Relay"],
+    ["04", "Prepaid Energy Meter", "Smart Energy • Monitoring"],
+    ["05", "Solar Mobile Charger", "Solar • Power Electronics"],
+    ["06", "Automatic Street Light", "LDR • Relay • Automation"],
+    ["07", "Smart Agricultural Irrigation", "IoT • Soil Moisture"],
+    ["08", "Over / Under Voltage Protection", "Protection • Relay"],
+    ["09", "Smart Water Level Controller", "Sensors • Automation"],
+    ["10", "Ultrasonic Object Detector", "Arduino • Sensors"],
   ];
 
   const futureProjects = [
@@ -49,7 +50,6 @@ function App() {
           <a href="#contact">Contact</a>
         </div>
 
-        {/* RESUME BUTTON */}
         <a
           className="resume-btn"
           href="/resume.pdf"
@@ -93,8 +93,6 @@ function App() {
               automation, renewable energy, embedded systems, IoT,
               MATLAB, AutoCAD and emerging AI technologies.
             </p>
-
-            {/* HERO BUTTONS */}
 
             <div className="hero-buttons">
               <a href="#projects" className="primary-btn">
@@ -146,7 +144,6 @@ function App() {
             <div className="energy-ring ring-one"></div>
             <div className="energy-ring ring-two"></div>
 
-            {/* PROFILE PHOTO */}
             <div className="profile-placeholder">
               <img
                 src={profilePhoto}
@@ -323,17 +320,60 @@ function App() {
                 <p>{tech}</p>
 
                 {/* PROJECT 01 - SOLAR SIMULATOR */}
-                <a
-                  href={
-                    number === "01"
-                      ? "https://github.com/yagantieswarkurukunda6300-cell/solar-panel-smart-tracking-simulator"
-                      : "#contact"
-                  }
-                  target={number === "01" ? "_blank" : undefined}
-                  rel={number === "01" ? "noreferrer" : undefined}
-                >
-                  View Project ↗
-                </a>
+
+                {number === "01" ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <a
+                      href="https://solar-panel-smart-tracking-simulato.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo ↗
+                    </a>
+
+                    <a
+                      href="https://github.com/yagantieswarkurukunda6300-cell/solar-panel-smart-tracking-simulator"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub ↗
+                    </a>
+                  </div>
+                ) : number === "02" ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <a
+                      href="https://frontend-delta-wine-75.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo ↗
+                    </a>
+
+                    <a
+                      href="https://github.com/yagantieswarkurukunda6300-cell/VOLTGUARD-AI"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub ↗
+                    </a>
+                  </div>
+                ) : (
+                  <a href="#contact">
+                    View Project ↗
+                  </a>
+                )}
               </article>
             ))}
           </div>
@@ -643,8 +683,6 @@ function App() {
                 📍 Kurnool, Andhra Pradesh, India
               </span>
             </div>
-
-            {/* CONTACT SOCIAL LINKS */}
 
             <div className="social-links">
               <a
