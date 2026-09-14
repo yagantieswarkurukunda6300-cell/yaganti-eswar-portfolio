@@ -5,7 +5,7 @@ function App() {
   const completedProjects = [
     ["01", "Solar Panel Smart Tracking Simulator", "React • Vite • Solar Energy"],
     ["02", "VOLTGUARD AI", "AI • Machine Learning • FastAPI • React"],
-    ["03", "Bluetooth Home Automation", "IoT • Bluetooth • Relay"],
+    ["03", "Smart Home Simulator", "IoT • Smart Home • Automation"],
     ["04", "Prepaid Energy Meter", "Smart Energy • Monitoring"],
     ["05", "Solar Mobile Charger", "Solar • Power Electronics"],
     ["06", "Automatic Street Light", "LDR • Relay • Automation"],
@@ -363,6 +363,30 @@ function App() {
 
                     <a
                       href="https://github.com/yagantieswarkurukunda6300-cell/VOLTGUARD-AI"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub ↗
+                    </a>
+                  </div>
+                ) : number === "03" ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <a
+                      href="https://smart-home-simulator-olive.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo ↗
+                    </a>
+
+                    <a
+                      href="https://github.com/yagantieswarkurukunda6300-cell/smart-home-simulator"
                       target="_blank"
                       rel="noreferrer"
                     >
