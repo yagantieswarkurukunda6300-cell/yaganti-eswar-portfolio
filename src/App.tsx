@@ -3,16 +3,21 @@ import "./App.css";
 
 function App() {
   const completedProjects = [
-    ["01", "Solar Panel Smart Tracking Simulator", "React • Vite • Solar Energy"],
-    ["02", "VOLTGUARD AI", "AI • Machine Learning • FastAPI • React"],
-    ["03", "Smart Home Simulator", "IoT • Smart Home • Automation"],
-    ["04", "Prepaid Energy Meter", "Smart Energy • Monitoring"],
-    ["05", "Solar Mobile Charger", "Solar • Power Electronics"],
-    ["06", "Automatic Street Light", "LDR • Relay • Automation"],
-    ["07", "Smart Agricultural Irrigation", "IoT • Soil Moisture"],
-    ["08", "Over / Under Voltage Protection", "Protection • Relay"],
-    ["09", "Smart Water Level Controller", "Sensors • Automation"],
-    ["10", "Ultrasonic Object Detector", "Arduino • Sensors"],
+    ["01", "VOLTGUARD AI", "AI • Machine Learning • FastAPI • React"],
+    [
+      "02",
+      "FACTORYNEXUS AI",
+      "AI • Industrial Automation • SCADA • IoT • Predictive Maintenance",
+    ],
+    ["03", "Solar Panel Smart Tracking Simulator", "React • Vite • Solar Energy"],
+    ["04", "Smart Home Simulator", "IoT • Smart Home • Automation"],
+    ["05", "Prepaid Energy Meter", "Smart Energy • Monitoring"],
+    ["06", "Solar Mobile Charger", "Solar • Power Electronics"],
+    ["07", "Automatic Street Light", "LDR • Relay • Automation"],
+    ["08", "Smart Agricultural Irrigation", "IoT • Soil Moisture"],
+    ["09", "Over / Under Voltage Protection", "Protection • Relay"],
+    ["10", "Smart Water Level Controller", "Sensors • Automation"],
+    ["11", "Ultrasonic Object Detector", "Arduino • Sensors"],
   ];
 
   const futureProjects = [
@@ -253,17 +258,13 @@ function App() {
             <div className="skill-card">
               <span>02</span>
               <h3>Design & Simulation</h3>
-              <p>
-                AutoCAD, MATLAB / Simulink, 3D Designing
-              </p>
+              <p>AutoCAD, MATLAB / Simulink, 3D Designing</p>
             </div>
 
             <div className="skill-card">
               <span>03</span>
               <h3>Programming</h3>
-              <p>
-                Java, C, Python & Embedded Programming
-              </p>
+              <p>Java, C, Python & Embedded Programming</p>
             </div>
 
             <div className="skill-card">
@@ -307,45 +308,17 @@ function App() {
           <div className="projects-grid">
             {completedProjects.map(([number, title, tech]) => (
               <article className="project-card" key={number}>
-                <div className="project-number">
-                  {number}
-                </div>
+                <div className="project-number">{number}</div>
 
                 <div className="project-icon">
-                  ⚡
+                  {title === "FACTORYNEXUS AI" ? "🏭" : "⚡"}
                 </div>
 
                 <h3>{title}</h3>
 
                 <p>{tech}</p>
 
-                {/* PROJECT 01 - SOLAR SIMULATOR */}
-
-                {number === "01" ? (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <a
-                      href="https://solar-panel-smart-tracking-simulato.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live Demo ↗
-                    </a>
-
-                    <a
-                      href="https://github.com/yagantieswarkurunda6300-cell/solar-panel-smart-tracking-simulator"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub ↗
-                    </a>
-                  </div>
-                ) : number === "02" ? (
+                {title === "VOLTGUARD AI" ? (
                   <div
                     style={{
                       display: "flex",
@@ -369,7 +342,55 @@ function App() {
                       GitHub ↗
                     </a>
                   </div>
-                ) : number === "03" ? (
+                ) : title === "FACTORYNEXUS AI" ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <a
+                      href="https://factorynexus-ai.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo ↗
+                    </a>
+
+                    <a
+                      href="https://github.com/yagantieswarkurukunda6300-cell/factorynexus-ai"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub ↗
+                    </a>
+                  </div>
+                ) : title === "Solar Panel Smart Tracking Simulator" ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <a
+                      href="https://solar-panel-smart-tracking-simulato.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo ↗
+                    </a>
+
+                    <a
+                      href="https://github.com/yagantieswarkurukunda6300-cell/solar-panel-smart-tracking-simulator"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub ↗
+                    </a>
+                  </div>
+                ) : title === "Smart Home Simulator" ? (
                   <div
                     style={{
                       display: "flex",
@@ -394,34 +415,10 @@ function App() {
                     </a>
                   </div>
                 ) : (
-                  <a href="#contact">
-                    View Project ↗
-                  </a>
+                  <a href="#contact">View Project ↗</a>
                 )}
               </article>
             ))}
-
-            {/* ================= FACTORYNEXUS AI — NEW PROJECT ONLY ================= */}
-
-            <article className="project-card">
-              <div className="project-number">
-                11
-              </div>
-
-              <div className="project-icon">
-                🏭
-              </div>
-
-              <h3>FACTORYNEXUS AI</h3>
-
-              <p>
-                AI • Industrial Automation • SCADA • IoT • Predictive Maintenance
-              </p>
-
-              <a href="#contact">
-                View Project ↗
-              </a>
-            </article>
           </div>
         </section>
 
@@ -455,19 +452,13 @@ function App() {
                   className="future-project-card"
                   key={number}
                 >
-                  <div className="future-number">
-                    {number}
-                  </div>
+                  <div className="future-number">{number}</div>
 
-                  <div className="future-icon">
-                    {icon}
-                  </div>
+                  <div className="future-icon">{icon}</div>
 
                   <h3>{title}</h3>
 
-                  <span className="future-tag">
-                    {mix}
-                  </span>
+                  <span className="future-tag">{mix}</span>
 
                   <div className="future-status">
                     <span></span>
@@ -500,9 +491,7 @@ function App() {
 
               <div className="timeline-content">
                 <span>APR 2026 — JUL 2026</span>
-
                 <h3>Quality Control Intern</h3>
-
                 <h4>Versigent</h4>
 
                 <p>
@@ -519,9 +508,7 @@ function App() {
 
               <div className="timeline-content">
                 <span>FEB 2026 — MAR 2026</span>
-
                 <h3>Quality Inspector</h3>
-
                 <h4>Stanley Manufacturing</h4>
 
                 <p>
@@ -536,9 +523,7 @@ function App() {
 
               <div className="timeline-content">
                 <span>JAN 2026 — FEB 2026</span>
-
                 <h3>Intern</h3>
-
                 <h4>AICTE / Skill India</h4>
 
                 <p>
@@ -553,9 +538,7 @@ function App() {
 
               <div className="timeline-content">
                 <span>JUN 2023 — NOV 2023</span>
-
                 <h3>Quality Control Inspector</h3>
-
                 <h4>
                   Trasccon Interconnection Systems Pvt Ltd
                 </h4>
@@ -572,9 +555,7 @@ function App() {
 
               <div className="timeline-content">
                 <span>JUN 2022 — AUG 2022</span>
-
                 <h3>Production Specialist</h3>
-
                 <h4>EMVEE</h4>
 
                 <p>
@@ -623,13 +604,9 @@ function App() {
                 Diploma in Electrical & Electronics Engineering
               </h3>
 
-              <h4>
-                Bheema Institute of Technology
-              </h4>
+              <h4>Bheema Institute of Technology</h4>
 
-              <strong>
-                86% • Gold Medalist
-              </strong>
+              <strong>86% • Gold Medalist</strong>
             </div>
           </div>
         </section>
@@ -671,25 +648,19 @@ function App() {
             <div className="achievement-card">
               🎤
               <h3>Paper Presentation</h3>
-              <p>
-                1st Prize • Regenerative Braking
-              </p>
+              <p>1st Prize • Regenerative Braking</p>
             </div>
 
             <div className="achievement-card">
               🧠
               <h3>College Quiz</h3>
-              <p>
-                1st Prize • 2 Consecutive Years
-              </p>
+              <p>1st Prize • 2 Consecutive Years</p>
             </div>
 
             <div className="achievement-card">
               🎭
               <h3>Cultural President</h3>
-              <p>
-                Event & Team Coordination
-              </p>
+              <p>Event & Team Coordination</p>
             </div>
           </div>
         </section>
@@ -701,9 +672,7 @@ function App() {
           id="contact"
         >
           <div className="contact-box">
-            <p className="contact-label">
-              LET'S CONNECT
-            </p>
+            <p className="contact-label">LET'S CONNECT</p>
 
             <h2>
               Have a project
@@ -754,17 +723,11 @@ function App() {
       {/* ================= FOOTER ================= */}
 
       <footer>
-        <strong>
-          KURUKUNDA YAGANTI ESWAR
-        </strong>
+        <strong>KURUKUNDA YAGANTI ESWAR</strong>
 
-        <span>
-          EEE • AI • IoT
-        </span>
+        <span>EEE • AI • IoT</span>
 
-        <small>
-          © 2026 All Rights Reserved.
-        </small>
+        <small>© 2026 All Rights Reserved.</small>
       </footer>
     </div>
   );
