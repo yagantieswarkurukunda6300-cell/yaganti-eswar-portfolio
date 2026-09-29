@@ -338,7 +338,7 @@ function App() {
                     </a>
 
                     <a
-                      href="https://github.com/yagantieswarkurukunda6300-cell/solar-panel-smart-tracking-simulator"
+                      href="https://github.com/yagantieswarkurunda6300-cell/solar-panel-smart-tracking-simulator"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -400,6 +400,28 @@ function App() {
                 )}
               </article>
             ))}
+
+            {/* ================= FACTORYNEXUS AI — NEW PROJECT ONLY ================= */}
+
+            <article className="project-card">
+              <div className="project-number">
+                11
+              </div>
+
+              <div className="project-icon">
+                🏭
+              </div>
+
+              <h3>FACTORYNEXUS AI</h3>
+
+              <p>
+                AI • Industrial Automation • SCADA • IoT • Predictive Maintenance
+              </p>
+
+              <a href="#contact">
+                View Project ↗
+              </a>
+            </article>
           </div>
         </section>
 
