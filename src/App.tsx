@@ -414,6 +414,30 @@ function App() {
                       GitHub ↗
                     </a>
                   </div>
+                ) : title === "Prepaid Energy Meter" ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <a
+                      href="https://prepaid-energy-meter-rust.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo ↗
+                    </a>
+
+                    <a
+                      href="https://github.com/yagantieswarkurukunda6300-cell/prepaid-energy-meter"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub ↗
+                    </a>
+                  </div>
                 ) : (
                   <a href="#contact">View Project ↗</a>
                 )}
