@@ -438,6 +438,30 @@ function App() {
                       GitHub ↗
                     </a>
                   </div>
+                ) : title === "Solar Mobile Charger" ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <a
+                      href="https://solar-mobile-charger.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo ↗
+                    </a>
+
+                    <a
+                      href="https://github.com/yagantieswarkurukunda6300-cell/solar-mobile-charger"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub ↗
+                    </a>
+                  </div>
                 ) : (
                   <a href="#contact">View Project ↗</a>
                 )}
@@ -470,27 +494,25 @@ function App() {
           </div>
 
           <div className="future-projects-grid">
-            {futureProjects.map(
-              ([number, icon, title, mix]) => (
-                <article
-                  className="future-project-card"
-                  key={number}
-                >
-                  <div className="future-number">{number}</div>
+            {futureProjects.map(([number, icon, title, mix]) => (
+              <article
+                className="future-project-card"
+                key={number}
+              >
+                <div className="future-number">{number}</div>
 
-                  <div className="future-icon">{icon}</div>
+                <div className="future-icon">{icon}</div>
 
-                  <h3>{title}</h3>
+                <h3>{title}</h3>
 
-                  <span className="future-tag">{mix}</span>
+                <span className="future-tag">{mix}</span>
 
-                  <div className="future-status">
-                    <span></span>
-                    PLANNED
-                  </div>
-                </article>
-              )
-            )}
+                <div className="future-status">
+                  <span></span>
+                  PLANNED
+                </div>
+              </article>
+            ))}
           </div>
         </section>
 
