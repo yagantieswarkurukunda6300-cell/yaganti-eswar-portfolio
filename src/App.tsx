@@ -1,23 +1,204 @@
+
 import profilePhoto from "./assets/profile.jpg";
 import "./App.css";
 
 function App() {
-  const completedProjects = [
-    ["01", "VOLTGUARD AI", "AI • Machine Learning • FastAPI • React"],
-    [
-      "02",
-      "FACTORYNEXUS AI",
-      "AI • Industrial Automation • SCADA • IoT • Predictive Maintenance",
-    ],
-    ["03", "Solar Panel Smart Tracking Simulator", "React • Vite • Solar Energy"],
-    ["04", "Smart Home Simulator", "IoT • Smart Home • Automation"],
-    ["05", "Prepaid Energy Meter", "Smart Energy • Monitoring"],
-    ["06", "Solar Mobile Charger", "Solar • Power Electronics"],
-    ["07", "Automatic Street Light", "LDR • Relay • Automation"],
-    ["08", "Smart Agricultural Irrigation", "IoT • Soil Moisture"],
-    ["09", "Over / Under Voltage Protection", "Protection • Relay"],
-    ["10", "Smart Water Level Controller", "Sensors • Automation"],
-    ["11", "Ultrasonic Object Detector", "Arduino • Sensors"],
+  const electricalDesignProjects = [
+    {
+      number: "01",
+      title: "SmartMicrogridAI",
+      tech: "Smart Grid • MATLAB • AI • Power Systems",
+      status: "COMPLETED",
+      links: [
+        {
+          label: "Live Demo ↗",
+          url: "https://smartmicrogridai-website-lcy2vxmqd.vercel.app/",
+        },
+        {
+          label: "GitHub ↗",
+          url: "https://github.com/yagantieswarkurukunda6300-cell/SmartMicrogridAI",
+        },
+      ],
+    },
+    {
+      number: "02",
+      title: "Industrial Power Distribution Design",
+      tech: "Electrical Design • Load Calculations • Power Systems",
+      status: "PLANNED",
+      links: [],
+    },
+    {
+      number: "03",
+      title: "Industrial Electrical Panel Design",
+      tech: "AutoCAD Electrical • Control Panels • Wiring",
+      status: "PLANNED",
+      links: [],
+    },
+    {
+      number: "04",
+      title: "Solar PV System Design and Sizing",
+      tech: "Solar Energy • PV Sizing • MATLAB",
+      status: "PLANNED",
+      links: [],
+    },
+    {
+      number: "05",
+      title: "Electrical Protection Coordination Simulator",
+      tech: "Power System Protection • Relays • Simulation",
+      status: "PLANNED",
+      links: [],
+    },
+  ];
+
+  const qualityEngineeringProjects = [
+    {
+      number: "01",
+      title: "AI-Based Quality Inspection System",
+      tech: "AI • Machine Vision • Quality Control",
+    },
+    {
+      number: "02",
+      title: "Statistical Process Control Dashboard",
+      tech: "SPC • Control Charts • Data Analytics",
+    },
+    {
+      number: "03",
+      title: "AI-Powered Root Cause Analysis",
+      tech: "AI • Root Cause Analysis • CAPA",
+    },
+    {
+      number: "04",
+      title: "Production Quality Analytics System",
+      tech: "Quality Metrics • Production • Analytics",
+    },
+    {
+      number: "05",
+      title: "Digital Inspection and Traceability System",
+      tech: "Digital Inspection • Defect Tracking • Traceability",
+    },
+  ];
+
+  const iotEmbeddedProjects = [
+    {
+      number: "01",
+      title: "VOLTGUARD AI",
+      tech: "AI • Machine Learning • FastAPI • React",
+      links: [
+        {
+          label: "Live Demo ↗",
+          url: "https://frontend-delta-wine-75.vercel.app/",
+        },
+        {
+          label: "GitHub ↗",
+          url: "https://github.com/yagantieswarkurukunda6300-cell/VOLTGUARD-AI",
+        },
+      ],
+    },
+    {
+      number: "02",
+      title: "FACTORYNEXUS AI",
+      tech: "AI • Industrial Automation • SCADA • IoT • Predictive Maintenance",
+      links: [
+        {
+          label: "Live Demo ↗",
+          url: "https://factorynexus-ai.vercel.app/",
+        },
+        {
+          label: "GitHub ↗",
+          url: "https://github.com/yagantieswarkurukunda6300-cell/factorynexus-ai",
+        },
+      ],
+    },
+    {
+      number: "03",
+      title: "Solar Panel Smart Tracking Simulator",
+      tech: "React • Vite • Solar Energy",
+      links: [
+        {
+          label: "Live Demo ↗",
+          url: "https://solar-panel-smart-tracking-simulato.vercel.app/",
+        },
+        {
+          label: "GitHub ↗",
+          url: "https://github.com/yagantieswarkurukunda6300-cell/solar-panel-smart-tracking-simulator",
+        },
+      ],
+    },
+    {
+      number: "04",
+      title: "Smart Home Simulator",
+      tech: "IoT • Smart Home • Automation",
+      links: [
+        {
+          label: "Live Demo ↗",
+          url: "https://smart-home-simulator-olive.vercel.app/",
+        },
+        {
+          label: "GitHub ↗",
+          url: "https://github.com/yagantieswarkurukunda6300-cell/smart-home-simulator",
+        },
+      ],
+    },
+    {
+      number: "05",
+      title: "Prepaid Energy Meter",
+      tech: "Smart Energy • Monitoring",
+      links: [
+        {
+          label: "Live Demo ↗",
+          url: "https://prepaid-energy-meter-rust.vercel.app/",
+        },
+        {
+          label: "GitHub ↗",
+          url: "https://github.com/yagantieswarkurukunda6300-cell/prepaid-energy-meter",
+        },
+      ],
+    },
+    {
+      number: "06",
+      title: "Solar Mobile Charger",
+      tech: "Solar • Power Electronics",
+      links: [
+        {
+          label: "Live Demo ↗",
+          url: "https://solar-mobile-charger.vercel.app/",
+        },
+        {
+          label: "GitHub ↗",
+          url: "https://github.com/yagantieswarkurukunda6300-cell/solar-mobile-charger",
+        },
+      ],
+    },
+    {
+      number: "07",
+      title: "Automatic Street Light",
+      tech: "LDR • Relay • Automation",
+      links: [],
+    },
+    {
+      number: "08",
+      title: "Smart Agricultural Irrigation",
+      tech: "IoT • Soil Moisture",
+      links: [],
+    },
+    {
+      number: "09",
+      title: "Over / Under Voltage Protection",
+      tech: "Protection • Relay",
+      links: [],
+    },
+    {
+      number: "10",
+      title: "Smart Water Level Controller",
+      tech: "Sensors • Automation",
+      links: [],
+    },
+    {
+      number: "11",
+      title: "Ultrasonic Object Detector",
+      tech: "Arduino • Sensors",
+      links: [],
+    },
   ];
 
   const futureProjects = [
@@ -67,7 +248,6 @@ function App() {
 
       <main>
         {/* ================= HERO ================= */}
-
         <section className="hero" id="home">
           <div className="circuit circuit-one"></div>
           <div className="circuit circuit-two"></div>
@@ -168,11 +348,9 @@ function App() {
         </section>
 
         {/* ================= ABOUT ================= */}
-
         <section className="section about" id="about">
           <div className="section-heading">
             <span>01</span>
-
             <div>
               <p>GET TO KNOW ME</p>
               <h2>About Me</h2>
@@ -234,11 +412,9 @@ function App() {
         </section>
 
         {/* ================= SKILLS ================= */}
-
         <section className="section skills" id="skills">
           <div className="section-heading">
             <span>02</span>
-
             <div>
               <p>WHAT I WORK WITH</p>
               <h2>Technical Skills</h2>
@@ -293,192 +469,157 @@ function App() {
           </div>
         </section>
 
-        {/* ================= COMPLETED PROJECTS ================= */}
-
+        {/* ================= PROJECT CATEGORIES ================= */}
         <section className="section projects" id="projects">
           <div className="section-heading">
             <span>03</span>
-
             <div>
               <p>ENGINEERING + TECHNOLOGY</p>
-              <h2>Completed Projects</h2>
+              <h2>My Projects</h2>
             </div>
           </div>
 
-          <div className="projects-grid">
-            {completedProjects.map(([number, title, tech]) => (
-              <article className="project-card" key={number}>
-                <div className="project-number">{number}</div>
+          {/* ELECTRICAL DESIGNING PROJECTS */}
+          <div>
+            <h3 style={{ margin: "30px 0 20px" }}>
+              ⚡ Electrical Designing Projects
+            </h3>
 
-                <div className="project-icon">
-                  {title === "FACTORYNEXUS AI" ? "🏭" : "⚡"}
-                </div>
-
-                <h3>{title}</h3>
-
-                <p>{tech}</p>
-
-                {title === "VOLTGUARD AI" ? (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <a
-                      href="https://frontend-delta-wine-75.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live Demo ↗
-                    </a>
-
-                    <a
-                      href="https://github.com/yagantieswarkurukunda6300-cell/VOLTGUARD-AI"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub ↗
-                    </a>
+            <div className="projects-grid">
+              {electricalDesignProjects.map((project) => (
+                <article
+                  className="project-card"
+                  key={project.number}
+                >
+                  <div className="project-number">
+                    {project.number}
                   </div>
-                ) : title === "FACTORYNEXUS AI" ? (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <a
-                      href="https://factorynexus-ai.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live Demo ↗
-                    </a>
 
-                    <a
-                      href="https://github.com/yagantieswarkurukunda6300-cell/factorynexus-ai"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub ↗
-                    </a>
-                  </div>
-                ) : title === "Solar Panel Smart Tracking Simulator" ? (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <a
-                      href="https://solar-panel-smart-tracking-simulato.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live Demo ↗
-                    </a>
+                  <div className="project-icon">⚡</div>
 
-                    <a
-                      href="https://github.com/yagantieswarkurukunda6300-cell/solar-panel-smart-tracking-simulator"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub ↗
-                    </a>
-                  </div>
-                ) : title === "Smart Home Simulator" ? (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <a
-                      href="https://smart-home-simulator-olive.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live Demo ↗
-                    </a>
+                  <h3>{project.title}</h3>
+                  <p>{project.tech}</p>
 
-                    <a
-                      href="https://github.com/yagantieswarkurukunda6300-cell/smart-home-simulator"
-                      target="_blank"
-                      rel="noreferrer"
+                  {project.status === "PLANNED" ? (
+                    <div className="future-status">
+                      <span></span>
+                      PLANNED
+                    </div>
+                  ) : (
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "10px",
+                        flexWrap: "wrap",
+                      }}
                     >
-                      GitHub ↗
-                    </a>
-                  </div>
-                ) : title === "Prepaid Energy Meter" ? (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <a
-                      href="https://prepaid-energy-meter-rust.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live Demo ↗
-                    </a>
+                      {project.links.map((link) => (
+                        <a
+                          key={link.label}
+                          href={link.url}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </article>
+              ))}
+            </div>
+          </div>
 
-                    <a
-                      href="https://github.com/yagantieswarkurukunda6300-cell/prepaid-energy-meter"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub ↗
-                    </a>
-                  </div>
-                ) : title === "Solar Mobile Charger" ? (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <a
-                      href="https://solar-mobile-charger.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live Demo ↗
-                    </a>
+          {/* QUALITY ENGINEERING PROJECTS */}
+          <div>
+            <h3 style={{ margin: "40px 0 20px" }}>
+              🏭 Quality Engineering Projects
+            </h3>
 
-                    <a
-                      href="https://github.com/yagantieswarkurukunda6300-cell/solar-mobile-charger"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub ↗
-                    </a>
+            <div className="projects-grid">
+              {qualityEngineeringProjects.map((project) => (
+                <article
+                  className="project-card"
+                  key={project.number}
+                >
+                  <div className="project-number">
+                    {project.number}
                   </div>
-                ) : (
-                  <a href="#contact">View Project ↗</a>
-                )}
-              </article>
-            ))}
+
+                  <div className="project-icon">🔍</div>
+
+                  <h3>{project.title}</h3>
+                  <p>{project.tech}</p>
+
+                  <div className="future-status">
+                    <span></span>
+                    PLANNED
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          {/* IOT AND EMBEDDED PROJECTS */}
+          <div>
+            <h3 style={{ margin: "40px 0 20px" }}>
+              🔌 IoT and Embedded Projects
+            </h3>
+
+            <div className="projects-grid">
+              {iotEmbeddedProjects.map((project) => (
+                <article
+                  className="project-card"
+                  key={project.number}
+                >
+                  <div className="project-number">
+                    {project.number}
+                  </div>
+
+                  <div className="project-icon">
+                    {project.title === "FACTORYNEXUS AI"
+                      ? "🏭"
+                      : "⚡"}
+                  </div>
+
+                  <h3>{project.title}</h3>
+                  <p>{project.tech}</p>
+
+                  {project.links.length > 0 ? (
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "10px",
+                        flexWrap: "wrap",
+                      }}
+                    >
+                      {project.links.map((link) => (
+                        <a
+                          key={link.label}
+                          href={link.url}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  ) : (
+                    <a href="#contact">View Project ↗</a>
+                  )}
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* ================= FUTURE PROJECTS ================= */}
-
         <section
           className="section future-projects"
           id="future-projects"
         >
           <div className="section-heading">
             <span>04</span>
-
             <div>
               <p>MY ENGINEERING ROADMAP</p>
               <h2>Future Projects 🚀</h2>
@@ -500,11 +641,8 @@ function App() {
                 key={number}
               >
                 <div className="future-number">{number}</div>
-
                 <div className="future-icon">{icon}</div>
-
                 <h3>{title}</h3>
-
                 <span className="future-tag">{mix}</span>
 
                 <div className="future-status">
@@ -517,14 +655,9 @@ function App() {
         </section>
 
         {/* ================= EXPERIENCE ================= */}
-
-        <section
-          className="section experience"
-          id="experience"
-        >
+        <section className="section experience" id="experience">
           <div className="section-heading">
             <span>05</span>
-
             <div>
               <p>INDUSTRY EXPERIENCE</p>
               <h2>Experience</h2>
@@ -534,12 +667,10 @@ function App() {
           <div className="timeline">
             <div className="timeline-item">
               <div className="timeline-dot"></div>
-
               <div className="timeline-content">
                 <span>APR 2026 — JUL 2026</span>
                 <h3>Quality Control Intern</h3>
                 <h4>Versigent</h4>
-
                 <p>
                   Conducted quality inspections, documented defects,
                   supported root cause analysis and CAPA, maintained
@@ -551,12 +682,10 @@ function App() {
 
             <div className="timeline-item">
               <div className="timeline-dot"></div>
-
               <div className="timeline-content">
                 <span>FEB 2026 — MAR 2026</span>
                 <h3>Quality Inspector</h3>
                 <h4>Stanley Manufacturing</h4>
-
                 <p>
                   Performed quality inspection activities and
                   supported production operations.
@@ -566,12 +695,10 @@ function App() {
 
             <div className="timeline-item">
               <div className="timeline-dot"></div>
-
               <div className="timeline-content">
                 <span>JAN 2026 — FEB 2026</span>
                 <h3>Intern</h3>
                 <h4>AICTE / Skill India</h4>
-
                 <p>
                   Learned electrical system design and analysis with
                   exposure to industry-oriented engineering concepts.
@@ -581,14 +708,10 @@ function App() {
 
             <div className="timeline-item">
               <div className="timeline-dot"></div>
-
               <div className="timeline-content">
                 <span>JUN 2023 — NOV 2023</span>
                 <h3>Quality Control Inspector</h3>
-                <h4>
-                  Trasccon Interconnection Systems Pvt Ltd
-                </h4>
-
+                <h4>Trasccon Interconnection Systems Pvt Ltd</h4>
                 <p>
                   Gained practical experience in quality inspection
                   and electrical support.
@@ -598,12 +721,10 @@ function App() {
 
             <div className="timeline-item">
               <div className="timeline-dot"></div>
-
               <div className="timeline-content">
                 <span>JUN 2022 — AUG 2022</span>
                 <h3>Production Specialist</h3>
                 <h4>EMVEE</h4>
-
                 <p>
                   Gained practical exposure to solar manufacturing
                   and production processes.
@@ -614,14 +735,9 @@ function App() {
         </section>
 
         {/* ================= EDUCATION ================= */}
-
-        <section
-          className="section education"
-          id="education"
-        >
+        <section className="section education" id="education">
           <div className="section-heading">
             <span>06</span>
-
             <div>
               <p>ACADEMIC JOURNEY</p>
               <h2>Education</h2>
@@ -631,41 +747,26 @@ function App() {
           <div className="education-grid">
             <div className="education-card">
               <span>2024 — 2027</span>
-
-              <h3>
-                B.E. Electrical & Electronics Engineering
-              </h3>
-
-              <h4>
-                VEMU Institute of Technology, Chittoor
-              </h4>
-
+              <h3>B.E. Electrical & Electronics Engineering</h3>
+              <h4>VEMU Institute of Technology, Chittoor</h4>
               <strong>9.6 CGPA</strong>
             </div>
 
             <div className="education-card">
               <span>2021 — 2024</span>
-
               <h3>
                 Diploma in Electrical & Electronics Engineering
               </h3>
-
               <h4>Bheema Institute of Technology</h4>
-
               <strong>86% • Gold Medalist</strong>
             </div>
           </div>
         </section>
 
         {/* ================= ACHIEVEMENTS ================= */}
-
-        <section
-          className="section achievements"
-          id="achievements"
-        >
+        <section className="section achievements" id="achievements">
           <div className="section-heading">
             <span>07</span>
-
             <div>
               <p>BEYOND THE CLASSROOM</p>
               <h2>Achievements</h2>
@@ -712,11 +813,7 @@ function App() {
         </section>
 
         {/* ================= CONTACT ================= */}
-
-        <section
-          className="section contact"
-          id="contact"
-        >
+        <section className="section contact" id="contact">
           <div className="contact-box">
             <p className="contact-label">LET'S CONNECT</p>
 
@@ -740,9 +837,7 @@ function App() {
                 ☎ 6300272789
               </a>
 
-              <span>
-                📍 Kurnool, Andhra Pradesh, India
-              </span>
+              <span>📍 Kurnool, Andhra Pradesh, India</span>
             </div>
 
             <div className="social-links">
@@ -767,12 +862,9 @@ function App() {
       </main>
 
       {/* ================= FOOTER ================= */}
-
       <footer>
         <strong>KURUKUNDA YAGANTI ESWAR</strong>
-
         <span>EEE • AI • IoT</span>
-
         <small>© 2026 All Rights Reserved.</small>
       </footer>
     </div>
